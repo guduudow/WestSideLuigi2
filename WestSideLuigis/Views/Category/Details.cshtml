@@ -1,0 +1,33 @@
+﻿@model WestSideLuigis.Models.ViewModels.DetailsMenu
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<a href="/Category/List">Go back to list</a>
+
+<h2>@Model.selectedcategory.CategoryName</h2>
+<div>ID: @Model.selectedcategory.CategoryId</div>
+
+<h3>Menu Items:</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Item ID</th>
+            <th>Item Name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var menuItem in Model.MenuItems)
+        {
+        <tr>
+            <td>@menuItem.ItemID</td>
+            <td>@menuItem.ItemName</td>
+            <td>@menuItem.ItemDescription</td>
+            <td>@menuItem.Price</td>
+        </tr>
+        }
+    </tbody>
+</table>

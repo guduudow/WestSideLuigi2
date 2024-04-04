@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WestSideLuigis.Models.CategoryDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>Categories</h2>
+<div><a href="/Category/New">Add Category</a></div>
+
+@foreach (var category in Model)
+{
+
+    <h2><a href="/Category/Details/@category.CategoryId">@category.CategoryName</a></h2>
+    <div><a style="color:#ab2020;" href="/Category/DeleteConfirm/@category.CategoryId">Delete Category</a></div>
+
+
+}
+

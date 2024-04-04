@@ -188,8 +188,14 @@
     <Compile Include="Controllers\BeerDataController.cs" />
     <Compile Include="Controllers\BreweryController.cs" />
     <Compile Include="Controllers\BreweryDataController.cs" />
+    <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\CategoryDataController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\MenuItemController.cs" />
+    <Compile Include="Controllers\MenuItemDataController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
+    <Compile Include="Controllers\OrdersDataController.cs" />
     <Compile Include="Controllers\ReceptionController.cs" />
     <Compile Include="Controllers\ReceptionDataController.cs" />
     <Compile Include="Global.asax.cs">
@@ -264,6 +270,7 @@
     <Compile Include="Models\Reception.cs" />
     <Compile Include="Models\ViewModels\DetailsAttendee.cs" />
     <Compile Include="Models\ViewModels\DetailsBrewery.cs" />
+    <Compile Include="Models\ViewModels\DetailsMenu.cs" />
     <Compile Include="Models\ViewModels\DetailsReception.cs" />
     <Compile Include="Models\ViewModels\UpdateBeer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -340,6 +347,24 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Category\DeleteConfirm.cshtml" />
+    <Content Include="Views\Category\Details.cshtml" />
+    <Content Include="Views\Category\List.cshtml" />
+    <Content Include="Views\Category\New.cshtml" />
+    <Content Include="Views\MenuItem\DeleteConfirm.cshtml" />
+    <Content Include="Views\MenuItem\Details.cshtml" />
+    <Content Include="Views\MenuItem\Edit.cshtml" />
+    <Content Include="Views\MenuItem\Error.cshtml" />
+    <Content Include="Views\MenuItem\List.cshtml" />
+    <Content Include="Views\MenuItem\New.cshtml" />
+    <Content Include="Views\Orders\AddMenuItemToOrder.cshtml" />
+    <Content Include="Views\Orders\Details.cshtml" />
+    <Content Include="Views\Orders\Error.cshtml" />
+    <Content Include="Views\Orders\List.cshtml" />
+    <Content Include="Views\Orders\ListOrdersForMenuItem.cshtml" />
+    <Content Include="Views\Orders\MenuItemsForOrder.cshtml" />
+    <Content Include="Views\Orders\OrdersForMenuItem.cshtml" />
+    <Content Include="Views\Beer\List.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -347,7 +372,6 @@
     <Folder Include="Content\Images\Breweries\" />
     <Folder Include="Views\AttendeeData\" />
     <Folder Include="Views\Attendee\" />
-    <Folder Include="Views\Beer\" />
     <Folder Include="Views\Brewery\" />
     <Folder Include="Views\Reception\" />
   </ItemGroup>

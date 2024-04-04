@@ -20,7 +20,7 @@ namespace WestSideLuigis.Controllers
         static AttendeeController()
         {
             client = new HttpClient();
-            client.BaseAddress = new Uri("https://localhost:44300/api/");
+            client.BaseAddress = new Uri("https://localhost:44334/api/");
         }
 
 
